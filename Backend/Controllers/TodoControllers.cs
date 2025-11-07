@@ -6,7 +6,7 @@ namespace Backend.Controllers
     [Route("api/[controller]")]
     public class TodoController : ControllerBase
     {
-        private static readonly List<string> Todos = new() { "Buy milk", "Walk the dog" };
+        private static readonly List<string> Todos = new() { "Build Fullstack App", "Look for job opportunities" };
 
         [HttpGet]
         public IActionResult GetTodos() => Ok(Todos);
