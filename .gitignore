@@ -1,0 +1,12 @@
+﻿# Node / Next
+frontend/.next/
+frontend/node_modules/
+frontend/.env.local
+
+# .NET
+Backend/bin/
+Backend/obj/
+
+# OS
+.DS_Store
+Thumbs.db
