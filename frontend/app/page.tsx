@@ -39,8 +39,8 @@ function Intro() {
         className="rounded-2xl border border-zinc-800 object-cover"
       />
       <div className="space-y-3">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Mikey Galvan</h1>
-        <p className="text-lg text-zinc-300">Software Engineer (Frontend-leaning)</p>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Michael Galvan</h1>
+        <p className="text-lg text-zinc-300">Software Engineer</p>
         <p className="text-zinc-400 max-w-2xl md:text-4xl">
           I build clean, fast UIs with Next.js, TypeScript, Tailwind/Bootstrap, and .NET backends.
           This page will grow with live demos that talk to my C# API.
@@ -75,9 +75,9 @@ function Card({ title, subtitle, children }: { title: string; subtitle?: string;
 
 function Skills() {
   const groups = [
-    { title: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Bootstrap'] },
-    { title: 'Backend', items: ['.NET/C#', 'Node.js', 'REST'] },
-    { title: 'Tooling', items: ['Git', 'Vercel', 'Azure', 'VS Code'] },
+    { title: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Bootstrap','Responsive UI & Component Architecture'] },
+    { title: 'Backend', items: ['.NET / ASP.NET Core','C#','Entity Framework', 'Node.js', 'REST API', 'SQL'] },
+    { title: 'Tools & Dev Workflow', items: ['Git','GitHub & GitLab CI/CD', 'Rider','VS Code', 'Azure','Agile','Debugging'] },
   ];
   return (
     <section aria-labelledby="skills">
@@ -114,7 +114,7 @@ function Projects() {
 
 function Experience() {
   const jobs = [
-    { company: 'Brycer', role: 'Frontend Engineer', period: '2023 – Present', bullets: [
+    { company: 'Brycer', role: 'Software Engineer', period: 'July 2022 – Aug 2025', bullets: [
       'Built rich data grids/charts with Syncfusion & Blazor.',
       'Improved sorting/paging UX and adapter performance.',
     ]},
@@ -137,7 +137,7 @@ function Experience() {
 
 function Education() {
   const schools = [
-    { name: 'Loyola University Chicago', degree: 'B.S. in Computer Science', period: '2018 – 2022' },
+    { name: 'Loyola University Chicago', degree: 'B.S. in Computer Science', period: 'August 2018 – July 2022' },
   ];
   return (
     <section aria-labelledby="education">
@@ -162,6 +162,9 @@ function Contact() {
         <Card title="GitHub">
           <a className="underline" href="https://github.com/michaelgalvandev-stack" target="_blank">github.com/michaelgalvandev-stack</a>
         </Card>
+        <Card title="Linkedin">
+          <a className="underline" href="https://www.linkedin.com/in/mgalvan-dev/" target="_blank">https://www.linkedin.com/in/mgalvan-dev/</a>
+        </Card>
       </div>
     </section>
   );
@@ -172,7 +175,7 @@ function Contact() {
 function TodoSection() {
   return (
     <section aria-labelledby="todo" className="pb-10">
-      <SectionTitle id="todo">Todo / Objectives</SectionTitle>
+      <SectionTitle id="todo">Goals / Objectives</SectionTitle>
       <div className="mt-6">
         <Todo />
       </div>
